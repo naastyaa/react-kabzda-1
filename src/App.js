@@ -1,31 +1,18 @@
-
 import './App.css';
+
 import React from "react";
-import Footer from "./Footer";
+import Header from "../Header/Header";
+import Navbar from "../Navbar/Navbar";
+import Profile from "../Profile/Profile";
+
 
 const App = () => {
-    return (<div>
-        <Footer />
-            <Header />
-        </div>
-    );
+    return (<div className={'app_wrapper'}>
+        <Header/>
+        <Navbar/>
+        <Profile />
+    </div>)
+        ;
 }
-const Techno = () =>{
-    return (
-        <div >
-            <ul>
-                <li>k</li>
-                <li>f</li>
-            </ul>
-        </div>
-    );
-}
-const Header = () => {
-    return (
-        <div >
-                <a href='#'>m</a>
-                <a href='#'>l</a>
-        </div>
-    );
-}
+
 export default App;
