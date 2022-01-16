@@ -1,17 +1,23 @@
 import React from "react";
-import s from './Post.module.css';
-import MyPosts from "./Post/MyPosts";
+import s from './MyPost.module.css';
+import Post from "./Post/Post";
 
 
-const Post = () => {
+const MyPost = () => {
     return (
+        <div>
+            My posts
+            <div>
+                <textarea> </textarea>
+                <button>Add post</button>
+            </div>
+
             <div className={s.post}>
-                <div className={s.item}>
-                    <img src="https://static.cnews.fr/sites/default/files/avatar_2_-_date_de_sortie_histoire_casting._tout_savoir_sur_le_film_de_james_cameron_610a65d33f1b6_0.jpeg"/>
-                    post1
-                </div>
-                <MyPosts/>
+                <Post message = 'Hi.' likes = '25'/>
+                <Post message = 'Its my first post' likes = '2'/>
+            </div>
+
         </div>
     );
 }
-export default Post;
+export default MyPost;

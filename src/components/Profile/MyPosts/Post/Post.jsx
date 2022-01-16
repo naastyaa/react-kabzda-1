@@ -1,22 +1,19 @@
 import React from "react";
-import s from './MyPosts.module.css';
-import Post from "../Post";
+import s from './Post.module.css';
+import MyPost from "../MyPost";
 
 
-const MyPosts = () => {
+const Post = (props) => {
+
     return (
-        <div>
-            My posts
+        <div className={s.item}>
+            <img
+                src="https://static.cnews.fr/sites/default/files/avatar_2_-_date_de_sortie_histoire_casting._tout_savoir_sur_le_film_de_james_cameron_610a65d33f1b6_0.jpeg"/>
+            {props.message}
             <div>
-                <textarea> fgh</textarea>
-                <button> Add post</button>
-
-            </div>
-
-            <div className={s.post}>
-               <Post/>
+                <span>{props.likes}</span>
             </div>
         </div>
     );
 }
-export default MyPosts;
+export default Post;
