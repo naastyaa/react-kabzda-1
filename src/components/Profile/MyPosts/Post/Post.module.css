@@ -1,6 +1,7 @@
 .item img{
     width: 90px;
     height: 80px;
+    padding: 10px;
 
     border-radius: 100%;
 }

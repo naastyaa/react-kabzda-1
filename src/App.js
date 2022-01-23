@@ -9,13 +9,16 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 const App = (props) => {
     return (
         <BrowserRouter>
-            <div className='app-wrapper'>
+            <div className='appWrapper'>
                 <Header/>
                 <Navbar/>
-                <div className='app_wrapper_content'>
+                <div className='appWrapperContent'>
                     <Routes>
-                        <Route path="/dialogs" element={<Dialogs />} />
+                        <Route path="/dialogs/*" element={<Dialogs />} />
                         <Route path="/profile" element={<Profile />} />
+                        <Route path="/news" element={<Profile />} />
+                        <Route path="/settings" element={<Profile />} />
+                        <Route path="/music" element={<Profile />} />
                     </Routes>
                 </div>
             </div>
