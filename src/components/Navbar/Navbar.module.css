@@ -5,9 +5,13 @@
 }
 .item {
     text-decoration: none;
-    color: #d94740;
+    color: #ffffff;
 }
 
 .active {
     color: gold;
+}
+.item:last-child{
+    margin-top: 40px;
+    text-transform: uppercase;
 }
